@@ -1,0 +1,16 @@
+from typing import List # this is used to add type hints for List type
+
+def append_to_list(my_list: List[int], elements: List[int]) -> List[int]:
+    new_list = my_list
+
+    for i in range(len(elements)):
+        new_list.append(elements[i])
+
+    return new_list
+
+
+
+
+# do not modify below this line
+print(append_to_list([1, 2, 3], [4, 5]))
+print(append_to_list([], [1, 2, 3, 4]))
